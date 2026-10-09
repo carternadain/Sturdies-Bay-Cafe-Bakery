@@ -222,7 +222,7 @@ main { margin-left: var(--rail); }
 /* ---------- Menu ---------- */
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 40px clamp(24px, 3vw, 40px);
 }
 .menu-group h3 {
@@ -293,7 +293,7 @@ main { margin-left: var(--rail); }
 /* ---------- Visit ---------- */
 .details {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px clamp(20px, 3vw, 40px);
   margin: 0 0 40px;
 }
@@ -331,9 +331,6 @@ main { margin-left: var(--rail); }
 }
 
 /* ---------- Responsive ---------- */
-@media (max-width: 1100px) {
-  .menu-grid, .details { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
 @media (max-width: 860px) {
   .rail {
     position: sticky;

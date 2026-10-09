@@ -52,5 +52,5 @@ so link previews work everywhere.
 - Instagram handle and Facebook page (go in `config.js`)
 - A photo of the J pod mural, and confirmation it's OK to credit Tasli Shaw by name
 - Photos of the bakery
-- Menu check and prices, if wanted
+- Lunch items to list on the menu, and prices if wanted
 - Confirm phone (250) 539-0094 and address 44 Madrona Drive
