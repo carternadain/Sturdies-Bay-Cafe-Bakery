@@ -21,6 +21,7 @@
 }
 
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
@@ -216,7 +217,7 @@ main { margin-left: var(--rail); }
 }
 .section-head p { color: var(--ink-soft); max-width: 32em; }
 
-.menu, .bakery, .visit { padding-top: var(--space); }
+.menu, .mural, .bakery, .visit { padding-top: var(--space); }
 
 /* ---------- Menu ---------- */
 .menu-grid {
@@ -247,6 +248,24 @@ main { margin-left: var(--rail); }
 }
 .menu-group small { font-family: var(--font-mono); font-size: 0.72rem; font-weight: 400; color: var(--ink-soft); }
 .menu-group small.mark { color: var(--magenta); }
+.group-note { margin-top: 12px; font-size: 0.9rem; color: var(--ink-soft); }
+
+/* ---------- Mural ---------- */
+.mural-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px clamp(20px, 3vw, 40px);
+  margin: 0;
+}
+.mural-facts dt {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--magenta);
+  margin-bottom: 8px;
+}
+.mural-facts dd { margin: 0; font-size: 1.15rem; font-weight: 500; }
 
 /* ---------- Photos ---------- */
 .photos {
@@ -296,6 +315,8 @@ main { margin-left: var(--rail); }
 
 /* ---------- Footer ---------- */
 .footer a { color: inherit; }
+.social { display: flex; gap: 16px; }
+.social:not(:has(a:not([hidden]))) { display: none; }
 .footer {
   display: flex;
   flex-wrap: wrap;
@@ -344,7 +365,7 @@ main { margin-left: var(--rail); }
   .rail-nav a[href="#bakery"] { display: none; }
   .rail { flex-wrap: wrap; row-gap: 6px; }
   .status { order: 4; width: 100%; }
-  .menu-grid, .details { grid-template-columns: minmax(0, 1fr); }
+  .menu-grid, .details, .mural-facts { grid-template-columns: minmax(0, 1fr); }
   .map { aspect-ratio: 4 / 3; }
 }
 

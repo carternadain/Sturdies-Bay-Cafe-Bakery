@@ -19,5 +19,9 @@ window.SITE = {
 
   /* Instagram handle without the @, e.g. "sturdiesbaybakery".
      Leave empty to hide the Instagram links. */
-  instagram: ""
+  instagram: "",
+
+  /* Facebook page name (the part after facebook.com/) or the full page URL.
+     Leave empty to hide the Facebook links. */
+  facebook: ""
 };

@@ -7,16 +7,17 @@ Sturdies Bay Bakery on Galiano Island, BC.
 |---|---|
 | `index.html` | The page: chart hero, menu, photos, visit details |
 | `styles.css` | All styling |
-| `config.js` | **Hours and Instagram handle. Edit this to update the site.** |
+| `config.js` | **Hours, Instagram and Facebook. Edit this to update the site.** |
 | `404.html` | Page shown for broken links (Vercel serves it automatically) |
 | `og-image.png` | Image shown when the link is shared in texts and social apps |
 | `favicon.svg`, `apple-touch-icon.png` | Browser tab and phone home-screen icons |
 | `vercel.json` | Clean URLs and image caching on Vercel |
 
-## Updating hours and Instagram
+## Updating hours and social links
 
-Open `config.js` and fill in `hours` (there's an example in the file) and
-`instagram`. Once hours are set, the site:
+Open `config.js` and fill in `hours` (there's an example in the file),
+`instagram` and `facebook`. Social links stay hidden until they're filled in.
+Once hours are set, the site:
 
 - shows an **Open now · until 3pm** / **Closed · opens 7am** badge in the menu bar,
   using island time (America/Vancouver)
@@ -48,7 +49,8 @@ so link previews work everywhere.
 ## Still needed from the owners
 
 - Real opening hours (goes in `config.js`)
-- Instagram handle, if there is one (goes in `config.js`)
+- Instagram handle and Facebook page (go in `config.js`)
+- A photo of the J pod mural, and confirmation it's OK to credit Tasli Shaw by name
 - Photos of the bakery
 - Menu check and prices, if wanted
 - Confirm phone (250) 539-0094 and address 44 Madrona Drive

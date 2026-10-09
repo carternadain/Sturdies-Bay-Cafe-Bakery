@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Sturdies Bay Bakery</title>
-  <meta name="description" content="Family-run café and bakery up from the Sturdies Bay ferry terminal on Galiano Island, BC. Coffee, cinnamon buns, bread and pies.">
+  <meta name="description" content="Family-run café steps from the Sturdies Bay ferry on Galiano Island, BC. Full espresso bar with 2% Jazz coffee, breakfast, lunch and baking. Home of the J pod mural.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
        domain, change these to full URLs, e.g. https://example.ca/og-image.png -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Sturdies Bay Bakery">
-  <meta property="og:description" content="Bread, buns & coffee up the hill from the Galiano ferry.">
+  <meta property="og:description" content="Espresso, breakfast &amp; lunch steps from the Galiano ferry. Home of the J pod mural.">
   <meta property="og:image" content="/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -29,7 +29,7 @@
     "@context": "https://schema.org",
     "@type": "Bakery",
     "name": "Sturdies Bay Bakery",
-    "description": "Family-run café and bakery up from the Sturdies Bay ferry terminal on Galiano Island.",
+    "description": "Family-run café steps from the Sturdies Bay ferry terminal on Galiano Island. Full espresso bar with 2% Jazz coffee, breakfast, lunch and baking. Home of the J pod mural.",
     "telephone": "+1-250-539-0094",
     "address": {
       "@type": "PostalAddress",
@@ -40,7 +40,7 @@
       "addressCountry": "CA"
     },
     "geo": { "@type": "GeoCoordinates", "latitude": 48.876, "longitude": -123.316 },
-    "servesCuisine": ["Bakery", "Coffee"],
+    "servesCuisine": ["Bakery", "Coffee", "Breakfast", "Lunch"],
     "image": "/og-image.png"
   }
   </script>
@@ -58,13 +58,16 @@
     <p class="status" id="status" hidden></p>
     <nav class="rail-nav" aria-label="Main">
       <a href="#menu">Menu</a>
-      <a href="#bakery">Bakery</a>
+      <a href="#mural">Mural</a>
       <a href="#visit">Visit</a>
     </nav>
     <div class="rail-foot">
       <a href="tel:+12505390094">250 539 0094</a>
       <span>44 Madrona Dr<br>Galiano Island</span>
-      <a class="ig-link" href="#" target="_blank" rel="noopener" hidden>Instagram</a>
+      <span class="social">
+        <a data-social="instagram" href="#" target="_blank" rel="noopener" hidden>Instagram</a>
+        <a data-social="facebook" href="#" target="_blank" rel="noopener" hidden>Facebook</a>
+      </span>
     </div>
   </aside>
 
@@ -75,13 +78,13 @@
       <div class="hero-title">
         <p class="chart-note">Chart: Sturdies Bay, Galiano Island · 48°52′ N 123°19′ W</p>
         <h1>Sturdies Bay<br>Bakery</h1>
-        <p class="hero-sub">Bread, buns &amp; coffee up the hill from the ferry.</p>
+        <p class="hero-sub">Espresso, breakfast &amp; lunch steps from the ferry.</p>
       </div>
     </section>
 
     <!-- Intro -->
     <section class="intro wrap">
-      <p class="intro-text">A small family-run café up the hill from the Galiano ferry. Like most things on the island, our baking comes over by boat: cinnamon buns, loaves, scones, hand pies and whole pies, with espresso and drip coffee made here to go with them.</p>
+      <p class="intro-text">A small family-run café steps from the Sturdies Bay ferry terminal. We run a full espresso bar pouring 2% Jazz coffee, roasted in Victoria, with breakfast, lunch and baking that comes over by boat. Look for the orcas on the wall: we’re home of the J pod mural.</p>
       <div class="intro-actions">
         <a href="#menu" class="button">See the menu</a>
         <a href="#visit" class="text-link">Hours &amp; directions</a>
@@ -97,9 +100,9 @@
 
       <div class="menu-grid">
         <div class="menu-group">
-          <h3>Coffee &amp; drinks</h3>
+          <h3>Espresso bar</h3>
           <ul>
-            <li>Drip coffee</li>
+            <li>Drip coffee <small>2% Jazz, Victoria BC</small></li>
             <li>Espresso</li>
             <li>Americano</li>
             <li>Latte <small>oat or dairy</small></li>
@@ -108,6 +111,14 @@
             <li>Loose-leaf tea</li>
             <li>Cold drinks</li>
           </ul>
+        </div>
+        <div class="menu-group">
+          <h3>Breakfast &amp; lunch</h3>
+          <ul>
+            <li>Breakfast</li>
+            <li>Lunch</li>
+          </ul>
+          <p class="group-note">What's on changes, so ask at the counter.</p>
         </div>
         <div class="menu-group">
           <h3>Baking</h3>
@@ -121,23 +132,29 @@
           </ul>
         </div>
         <div class="menu-group">
-          <h3>Bread</h3>
+          <h3>Bread, pies &amp; cakes</h3>
           <ul>
-            <li>Rustic whole wheat</li>
-            <li>Spelt</li>
+            <li>Whole wheat &amp; spelt loaves</li>
             <li>Country white</li>
-            <li>Daily special <small>ask at the counter</small></li>
-          </ul>
-        </div>
-        <div class="menu-group">
-          <h3>Pies &amp; cakes</h3>
-          <ul>
             <li>Fruit pies <small>seasonal</small></li>
             <li>Whole cakes</li>
             <li>Special orders <small>call 1–2 days ahead</small></li>
           </ul>
         </div>
       </div>
+    </section>
+
+    <!-- Mural -->
+    <section class="mural wrap" id="mural">
+      <header class="section-head">
+        <h2>The J pod mural</h2>
+        <p>Our café is home to Vancouver Island artist Tasli Shaw’s mural of J pod, one of the three families of Southern Resident killer whales that travel the Salish Sea. Keep an eye on the water from the ferry: the real ones pass through these channels too.</p>
+      </header>
+      <dl class="mural-facts">
+        <div><dt>Artist</dt><dd>Tasli Shaw, Vancouver Island</dd></div>
+        <div><dt>Subject</dt><dd>J pod, Southern Resident killer whales</dd></div>
+        <div><dt>The pods</dt><dd>J, K &amp; L, all in the Salish Sea</dd></div>
+      </dl>
     </section>
 
     <!-- Photos -->
@@ -166,7 +183,7 @@
     <section class="visit wrap" id="visit">
       <header class="section-head">
         <h2>Visit</h2>
-        <p>A short walk up Madrona Drive from the Sturdies Bay ferry terminal. Stop in before your sailing or on your way onto the island.</p>
+        <p>Steps from the Sturdies Bay ferry terminal on Madrona Drive. Stop in before your sailing or on your way onto the island.</p>
       </header>
 
       <dl class="details">
@@ -183,12 +200,17 @@
       <div class="visit-links">
         <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Sturdies+Bay+Bakery+Galiano+Island" target="_blank" rel="noopener">Open in Google Maps</a>
         <a class="text-link" href="https://www.bcferries.com/" target="_blank" rel="noopener">BC Ferries sailing times</a>
+        <a class="text-link" data-social="instagram" href="#" target="_blank" rel="noopener" hidden>Updates on Instagram</a>
+        <a class="text-link" data-social="facebook" href="#" target="_blank" rel="noopener" hidden>Updates on Facebook</a>
       </div>
     </section>
 
     <footer class="footer wrap">
       <span>Sturdies Bay Bakery · Galiano Island, British Columbia</span>
-      <a class="ig-link" href="#" target="_blank" rel="noopener" hidden>Instagram</a>
+      <span class="social">
+        <a data-social="instagram" href="#" target="_blank" rel="noopener" hidden>Instagram</a>
+        <a data-social="facebook" href="#" target="_blank" rel="noopener" hidden>Facebook</a>
+      </span>
       <span>© <span id="year">2026</span></span>
     </footer>
   </main>
@@ -202,12 +224,17 @@
       const DAYS = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
       const NAMES = { mon: 'Mon', tue: 'Tue', wed: 'Wed', thu: 'Thu', fri: 'Fri', sat: 'Sat', sun: 'Sun' };
 
-      if (site.instagram) {
-        document.querySelectorAll('.ig-link').forEach(a => {
-          a.href = 'https://www.instagram.com/' + site.instagram.replace(/^@/, '') + '/';
+      const socialUrl = {
+        instagram: h => 'https://www.instagram.com/' + h.replace(/^@/, '') + '/',
+        facebook: h => /^https?:/.test(h) ? h : 'https://www.facebook.com/' + h + '/'
+      };
+      Object.keys(socialUrl).forEach(net => {
+        if (!site[net]) return;
+        document.querySelectorAll('[data-social="' + net + '"]').forEach(a => {
+          a.href = socialUrl[net](site[net]);
           a.hidden = false;
         });
-      }
+      });
 
       const hours = site.hours;
       if (!hours) return;
@@ -274,7 +301,7 @@
           links.forEach(a => a.toggleAttribute('aria-current', a.getAttribute('href') === '#' + e.target.id));
         });
       }, { rootMargin: '-45% 0px -50% 0px' });
-      ['menu', 'bakery', 'visit'].forEach(id => io.observe(document.getElementById(id)));
+      ['menu', 'mural', 'bakery', 'visit'].forEach(id => io.observe(document.getElementById(id)));
     })();
 
     /* Generated nautical chart of the bay: land (buff), shallow water (blue),
@@ -381,6 +408,31 @@
           if (v < LAND - 0.02) ctx.fillText(Math.max(1, Math.round((LAND - v) * 90)), i * CELL, j * CELL);
         });
         ctx.globalAlpha = 1;
+
+        // J pod's track: a dashed route through open water, drawn only over water
+        ctx.save();
+        ctx.setLineDash([7, 6]);
+        ctx.lineWidth = 1.3;
+        ctx.strokeStyle = C.ink;
+        ctx.globalAlpha = 0.7;
+        ctx.beginPath();
+        let pen = false, labelAt = null;
+        const x0 = W * 0.47; // starts right of the title's second line
+        for (let x = W < 700 ? W + 1 : x0; x <= W; x += 4) {
+          const y = H * (0.79 + 0.045 * Math.sin((x / W) * Math.PI * 2.2 + t * 3));
+          const fi = Math.min(cols - 1, Math.round(x / CELL)), fj = Math.min(rows - 1, Math.round(y / CELL));
+          const wet = field[fj * cols + fi] < SHALLOW;
+          if (wet && !pen) { ctx.moveTo(x, y); pen = true; }
+          else if (wet) { ctx.lineTo(x, y); if (!labelAt && x > x0 + W * 0.12) labelAt = [x, y]; }
+          else pen = false;
+        }
+        ctx.stroke();
+        ctx.restore();
+        if (labelAt) {
+          ctx.font = 'italic 12px "IBM Plex Mono", monospace';
+          ctx.fillStyle = C.ink; ctx.textAlign = 'left';
+          ctx.fillText('J pod', labelAt[0] + 6, labelAt[1] - 10);
+        }
 
         // Light: the bakery, on the shore
         const mx = W * (W < 700 ? 0.7 : 0.72), my = H * 0.3;
